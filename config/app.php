@@ -165,16 +165,17 @@ return [
         /*
          * Package Service Providers...
          */
-
+        LaravelDoctrine\Migrations\MigrationsServiceProvider::class,
         /*
          * Application Service Providers...
          */
-        Presentation\Providers\AppServiceProvider::class,
-        Presentation\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        Presentation\Providers\EventServiceProvider::class,
-        Presentation\Providers\RouteServiceProvider::class,
-
+        Infrastructure\Providers\AppServiceProvider::class,
+        Infrastructure\Providers\AuthServiceProvider::class,
+        Infrastructure\Providers\EventServiceProvider::class,
+        Infrastructure\Providers\RouteServiceProvider::class,
+        Infrastructure\Providers\CommandBusServiceProvider::class,
+        Infrastructure\Providers\QueryBusServiceProvider::class,
+        Infrastructure\Providers\DoctrineRepositoriesServiceProvider::class,
     ],
 
     /*
