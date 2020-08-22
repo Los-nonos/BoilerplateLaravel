@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Infrastructure\Hash;
+namespace Domain\Interfaces\Services;
 
 interface HashManagerInterface
 {

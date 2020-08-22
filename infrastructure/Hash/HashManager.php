@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Infrastructure\Hash;
 
+use Domain\Interfaces\Services\HashManagerInterface;
 use Illuminate\Hashing\HashManager as HashManagerLaravel;
 
 final class HashManager implements HashManagerInterface

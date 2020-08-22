@@ -2,11 +2,11 @@
 
 namespace Infrastructure\Providers;
 
+use Domain\Interfaces\Services\HashManagerInterface;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Infrastructure\Cache\Provider\Redis\RedisProvider;
 use Infrastructure\Hash\HashManager;
-use Infrastructure\Hash\HashManagerInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Redis;
 
